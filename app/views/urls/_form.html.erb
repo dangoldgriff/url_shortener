@@ -1,5 +1,5 @@
 <h1> URL Shortener </h1>
 <%= form_for @url do |f| %>
-  <%= f.text_field :long_url %>
+  http:// <%= f.text_field :long_url, :autofocus => true %>
   <%= f.submit %>
 <% end %>
