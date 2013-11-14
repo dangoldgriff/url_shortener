@@ -1,4 +1,4 @@
 #URL Shortener
 This is a Ruby on Rails bit.ly clone using Postgresql database and `rspec` for testing. 
 
-Created by: [Dan](http://dangriffin.site44.com/) and [Jason](http://jasonrodriguez.net/)
+Created by: [Dan](http://dangriffin.site44.com/) 
