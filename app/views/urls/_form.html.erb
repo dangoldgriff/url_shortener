@@ -1,5 +1,6 @@
 <h1> URL Shortener </h1>
 <%= form_for @url do |f| %>
-  http:// <%= f.text_field :long_url, :autofocus => true %>
+	<%= f.label "Please include http://" %>
+  <%= f.text_field :long_url, :autofocus => true, :placeholder => "http://" %>
   <%= f.submit %>
 <% end %>

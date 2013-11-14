@@ -7,8 +7,7 @@ class UrlsController < ApplicationController
  def create
     @url = Url.new(url_params)
     if @url.save
-      flash[:notice] = "Your url has been saved."
-    redirect_to @url
+      redirect_to @url, notice: "Consider your URL shortened"
     else
      render :new
     end
@@ -16,7 +15,6 @@ class UrlsController < ApplicationController
 
   def show 
     @url = Url.find(params[:id])
-    'short' + @url.to_s
   end
 
 private 
